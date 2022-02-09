@@ -1,4 +1,10 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  width: 799px;
+  height: 447px;
+  background: linear-gradient(to right top, #3300ff, #e914ed);
+  border-radius: 40px;
+  color: #fff;
 }

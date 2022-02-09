@@ -2,8 +2,14 @@ import * as React from "react";
 import { render } from "react-dom";
 import { Home } from "./pages/Home";
 
+import "./styles.css";
+
 function App() {
-  return <Home />;
+  return (
+    <div className="App">
+      <Home />
+    </div>
+  );
 }
 
 const rootElement = document.getElementById("root");

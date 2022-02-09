@@ -1,13 +1,15 @@
 import React from "react";
-import { Chip } from "../../components/Chip";
+import { ProfileCard } from "../../components/ProfileCard";
 import { Container } from "./styles";
 
 export function Home() {
-  const AvatarUrl = "https://avatars.githubusercontent.com/u/47527659?v=4";
+  const name = "Thiago Torres";
+  const imageUrl = "https://avatars.githubusercontent.com/u/47527659?v=4";
+  const amount = 123456;
 
   return (
     <Container>
-      <Chip avatarUrl={AvatarUrl} />
+      <ProfileCard name={name} avatarUrl={imageUrl} amount={amount} />
     </Container>
   );
 }
