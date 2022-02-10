@@ -16,12 +16,15 @@ interface ProfileProps {
 }
 
 export function ProfileCard({ name, avatarUrl, amount }: ProfileProps) {
+  function MoneyFormatted(value: number) {
+    return value.toLocaleString("br");
+  }
   return (
     <Container>
       <AvatarImage src={avatarUrl} />
       <UserData>
         <UserName>Olá, {name}</UserName>
-        <CurrentAmount>{amount}</CurrentAmount>
+        <CurrentAmount>Saldo: R$ {MoneyFormatted(amount)}</CurrentAmount>
       </UserData>
       <DropDownButton></DropDownButton>
     </Container>

@@ -30,6 +30,7 @@ export const UserName = styled.h2`
 
 export const CurrentAmount = styled.h2`
   font-size: 16px;
+  text-align: start;
 `;
 
 export const DropDownButton = styled.button`

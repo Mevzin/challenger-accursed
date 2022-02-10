@@ -6,7 +6,7 @@ import { Container, Products } from "./styles";
 export function Home() {
   const name = "Thiago Torres";
   const imageUrl = "https://avatars.githubusercontent.com/u/47527659?v=4";
-  const amount = 123456;
+  const amount = 123456.56;
 
   return (
     <Container>
