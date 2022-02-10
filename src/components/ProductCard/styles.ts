@@ -10,6 +10,14 @@ export const Container = styled.div`
   border-radius: 24px;
   margin-top: 46px;
   margin-left: 58px;
+  transition: 0.5s;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transition: 0.5s;
+    top: -4px;
+    box-shadow: 0 4px 10px #999;
+  }
 `;
 
 export const ProductName = styled.h1`
