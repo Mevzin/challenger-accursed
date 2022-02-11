@@ -7,8 +7,8 @@ export const Container = styled.div`
   max-height: 400px;
   background: rgba(0, 0, 0, 0.4);
   transition: width 2s, height 2s, transform 2s;
-  padding: 5px 0px 5px 0px;
   border-radius: 10px;
+  margin-top: 12px;
 `;
 
 export const OptionDrop = styled.button`

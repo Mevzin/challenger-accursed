@@ -41,4 +41,6 @@ export const DropDownButton = styled.button`
   border-radius: 50%;
   border: 0.5px solid #cfc9c9;
   background: rgba(0, 0, 0, 0);
+  color: white;
+  rotate: 90°;
 `;

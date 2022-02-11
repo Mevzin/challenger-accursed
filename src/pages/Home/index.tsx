@@ -1,7 +1,13 @@
 import React from "react";
 import { ProductCard } from "../../components/ProductCard";
 import { ProfileCard } from "../../components/ProfileCard";
-import { Container, Products } from "./styles";
+import { Tooltip } from "../../components/Tooltip";
+import { Container, Products, TooltipArea, ProfileLine } from "./styles";
+import styled from "styled-components";
+
+const TooltipTarget = styled.span`
+  color: #fff;
+`;
 
 export function Home() {
   const name = "Thiago Torres";
@@ -10,7 +16,14 @@ export function Home() {
 
   return (
     <Container>
-      <ProfileCard name={name} avatarUrl={imageUrl} amount={amount} />
+      <ProfileLine>
+        <ProfileCard name={name} avatarUrl={imageUrl} amount={amount} />
+        <TooltipArea>
+          <Tooltip text="Tooltip caçador de ponteiro!">
+            <TooltipTarget>Passe o mouse aqui!</TooltipTarget>
+          </Tooltip>
+        </TooltipArea>
+      </ProfileLine>
       <Products>
         <ProductCard
           title="Ford Mustang GT"

@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { DropDown } from "../DropDown";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-
 import {
   Container,
   UserName,
@@ -46,9 +43,9 @@ export function ProfileCard({ name, avatarUrl, amount }: ProfileProps) {
       <UserData>
         <UserName>Olá, {name}</UserName>
         <CurrentAmount>Saldo: R$ {MoneyFormatted(amount)}</CurrentAmount>
-        <FontAwesomeIcon icon={faCoffee} />
       </UserData>
       <DropDownButton onClick={handleDropDown}>
+        DROP
         {isActivy && <DropDown options={options} />}
       </DropDownButton>
     </Container>

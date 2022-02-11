@@ -2,8 +2,13 @@ import React from "react";
 
 import { Container, OptionDrop } from "./styles";
 
+type OptionProps = Array<{
+  value: number;
+  label: string;
+}>;
+
 interface DropDownProps {
-  options: [];
+  options: OptionProps;
 }
 
 export function DropDown({ options }: DropDownProps) {
