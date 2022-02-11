@@ -34,13 +34,15 @@ export const CurrentAmount = styled.h2`
 `;
 
 export const DropDownButton = styled.button`
-  height: 40px;
-  width: 40px;
-  margin-top: 40px;
-  margin-right: 20px;
-  border-radius: 50%;
+  height: 50px;
+  width: 90px;
   border: 0.5px solid #cfc9c9;
   background: rgba(0, 0, 0, 0);
+  font-size: 20px;
   color: white;
-  rotate: 90°;
+  border-radius: 10px;
+  transition: 1s;
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
 `;

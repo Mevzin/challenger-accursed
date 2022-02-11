@@ -15,9 +15,9 @@ export function DropDown({ options }: DropDownProps) {
   return (
     <Container>
       {options.map((options: any) => (
-        <>
-          <OptionDrop key={options.value}>{options.label}</OptionDrop>
-        </>
+        <div key={options.value}>
+          <OptionDrop>{options.label}</OptionDrop>
+        </div>
       ))}
     </Container>
   );
