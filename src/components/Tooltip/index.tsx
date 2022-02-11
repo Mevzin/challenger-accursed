@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TooltipTarget, TooltipBox } from "./styles";
 
 interface TooltipProps {
-  children: string;
+  children: any;
   text: string;
 }
 
